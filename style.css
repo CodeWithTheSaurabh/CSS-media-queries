@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+
+}
+
+.container {
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero {
+    width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    flex-direction:column-reverse;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+
+
+/* max-width => On screens that are 600px or less, set the background color to olive */
+/* min-width => On screens that are 600px or more, set the background color to olive */
+
+@media screen and (max-width :425px) {
+    .container {
+        background-color: black;
+    }
+
+    .hero {
+        background-color: #ca3142;
+        color: black;
+    }
+
+    .container{
+        margin-top: 35%;
+    }
+
+}
+
+@media screen and (min-width :428px) {
+    .container {
+        background-color: black;
+    }
+
+    .hero {
+        background-color: #75fbfd;
+        color: black;
+    }
+}
+
+
+@media screen and (min-width :769px) {
+    .container {
+        background-color: black;
+    }
+
+    .hero {
+        background-color: #b1882f;
+        color: black;
+    }
+
+    
+}
+
+
+.name{
+    color: white;
+}
+
+.sourabh{
+    display: block;
+    margin-top: 1%;
+    background-image: linear-gradient(rgb(251, 17, 17), rgb(19, 19, 14));
+    color: rgb(25, 241, 25);
+    border-radius: 5px;
+    text-decoration: underline;
+    text-shadow: #0a0a10;
+    
+}
+
+.sourabh:hover{
+    
+    cursor: pointer;
+    background-image: linear-gradient(#b7003e, #3f00b7);
+    color: rgb(12, 9, 9);
+    display: flex;
+    transition: 1.5s ease-out ;
+    rotate: 360deg;
+    motion-rotation:reverse;
+    
+}
+
